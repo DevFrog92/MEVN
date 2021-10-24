@@ -1,0 +1,23 @@
+{
+  "name": "MEVN",
+  "version": "1.0.0",
+  "description": "> `실시간 모니터링 시스템을 만드며 정복하는 MEVN` 책을 통해서 공부한 내용을 작성합니다.",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-me:DevFrog92/MEVN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fxjs": "^0.21.3",
+    "vo": "^4.0.2"
+  },
+  "devDependencies": {
+    "electron": "^15.3.0"
+  }
+}
