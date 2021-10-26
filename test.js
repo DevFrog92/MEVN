@@ -9,4 +9,7 @@ console.log(mp)
 // Iterator
 
 // 함수 성능 비교
+
 // parseInt, ~~
+// indexOf and includes
+// new Object and {}
