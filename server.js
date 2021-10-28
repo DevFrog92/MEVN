@@ -7,3 +7,8 @@ app.use('/', express.static(_path))
 app.listen(12919, () => {
   console.log('lazy image server: 12010 start http://27.0.0.1:12010')
 })
+
+
+// rabse
+// rebase
+// rebase 2
