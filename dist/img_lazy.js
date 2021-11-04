@@ -16,12 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
             return null
           }else return lazyImage
         }).filter(image => image)
-        
+
         if (!lazyImages.length) {
           document.removeEventListener('scroll',lazyLoad)
         }else active = false
       },200)
     }
   }
-  document.addEventListener('scroll',lazyLoad)
+  document.addEventListener('scroll', lazyLoad)
+  window.addEventListener('keypress',(e) => console.log(e.key))
 })
