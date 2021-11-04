@@ -20,6 +20,7 @@ const g = f(3)
 console.log(g(4))
 
 // custom currying
+// 중첩 화살표 함수
 const curry = fn => a => b => fn(a, b)
 
 
@@ -30,4 +31,5 @@ const f_pipe = pipe(
   filter(a=>a%2)
 )
 const _ret = f_pipe([1, 2, 3, 4])
-console.log(_ret)
+
+// Point-free, 무인수프로그래밍
