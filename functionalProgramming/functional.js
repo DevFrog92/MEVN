@@ -6,12 +6,28 @@
 // 5. 모나드함수 : 어떤 값을 받아 새로운 값을 반환하는 함수이다.
 // 6. 커링(currying) : 어떤 함수의 예상되는 매개변수의 수 보다 적은 수의 매개변수가 전달되면 함수를 실핼하지 않고, 모든 매개변수가 들어오면 함수를 실행하는 방법
 
+// ramda for currying
 const R = require('ramda')
 const a = R.add(1)
 const b = a(2)
+
 console.log(b)
+
 const addFourNumbers = (a, b, c, d) => a + b + c + d
 const curriedAddFourNumber = R.curry(addFourNumbers)
 const f = curriedAddFourNumber(1, 2)
 const g = f(3)
 console.log(g(4))
+
+// custom currying
+const curry = fn => a => b => fn(a, b)
+
+
+// fxjs
+const { map, filter, pipe } = require('fxjs')
+const f_pipe = pipe(
+  map(a => a + 1),
+  filter(a=>a%2)
+)
+const _ret = f_pipe([1, 2, 3, 4])
+console.log(_ret)
